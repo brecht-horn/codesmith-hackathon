@@ -1,0 +1,13 @@
+{
+    "manifest_version" : 3,
+    "name": "Colonial Theme",
+    "version": "1.0",
+    "description": "See what the internet was like in colonial times!",
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["./main.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
